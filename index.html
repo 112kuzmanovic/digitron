@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="digitron.css">
+    <title>Document</title>
+    <script type="text/javascript">
+    function display(a){
+        digitron.rezultat.value=digitron.rezultat.value+a;
+    }
+    function obrisi(){
+        document.digitron.rezultat.value="";
+    }
+    </script>
+</head>
+<body>
+    <div class="calc">
+        <form name="digitron">
+            <input class="r" type="text" name="rezultat" style="text-align: right">
+            <br><br>
+            
+            <input class="bt" type="button" name="devet" value="9" onclick="display(devet.value)">
+&nbsp&nbsp&nbsp
+            <input class="bt" type="button" name="osam" value="8" onclick="display(osam.value)">
+            &nbsp&nbsp&nbsp
+            <input class="bt" type="button" name="sedam" value="7" onclick="display(sedam.value)">
+            &nbsp&nbsp&nbsp
+            <input class="bt" type="button" name="plus" value="+" onclick="display(plus.value)">
+            &nbsp&nbsp&nbsp
+            <br><br>
+            
+            <input class="bt" type="button" name="sest" value="6" onclick="display(sest.value)">
+            &nbsp&nbsp&nbsp
+            <input class="bt" type="button" name="pet" value="5" onclick="display(pet.value)">
+            &nbsp&nbsp&nbsp
+            <input class="bt" type="button" name="cetiri" value="4" onclick="display(cetiri.value)">
+            &nbsp&nbsp&nbsp
+            <input class="bt" type="button" name="minus" value="-" onclick="display(minus.value)">
+            &nbsp&nbsp&nbsp
+            <br><br>
+            
+            <input class="bt" type="button" name="tri" value="3" onclick="display(tri.value)">
+            &nbsp&nbsp&nbsp
+            <input class="bt" type="button" name="dva" value="2" onclick="display(dva.value)">
+            &nbsp&nbsp&nbsp
+            <input class="bt" type="button" name="jedan" value="1" onclick="display(jedan.value)">
+            &nbsp&nbsp&nbsp
+            <input class="bt" type="button" name="puta" value="*" onclick="display(puta.value)">
+            &nbsp&nbsp&nbsp
+            <br><br>
+            
+            <input class="bt" type="button" name="jednako" value="=" onclick="rezultat.value=eval(rezultat.value)">
+            &nbsp&nbsp&nbsp
+            <input class="bt" type="button" name="nula" value="0" onclick="display(nula.value)">
+            &nbsp&nbsp&nbsp
+            <input class="bt" type="button" name="zarez" value="." onclick="display(zarez.value)">
+            &nbsp&nbsp&nbsp
+            <input class="bt" type="button" name="podijeljeno" value="/" onclick="display(podijeljeno.value)">
+            <br>
+            <br>
+            <input class="bt1" type="button" name="brisanje" value="OBRISI SVE" onclick="obrisi()">
+
+
+        </form>
+    </div>
+    
+</body>
+</html>
